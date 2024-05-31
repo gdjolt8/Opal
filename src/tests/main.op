@@ -1,0 +1,20 @@
+type Vector2<T>
+{
+  public x: int = 5;
+  new Vector2(x, y) {
+    x: T = x;
+    y: T = y;
+  }
+}
+
+operator + (a: Vector2, b: Vector2) Vector2 
+{
+    return Vector2(a.x + b.x, a.y, b.y);
+}
+
+operator + (a: string, b: string) string
+{
+  return a.join(b);
+}
+
+println( Vector2<int>(2, 3) + Vector2(4, 5) ) ; /* Vector2(7,8) */

@@ -1,0 +1,25 @@
+import io;
+
+class Token
+{
+  string n;
+  int t;
+
+  Token()
+  {
+    return {s,t};
+  }
+}
+class io
+{
+  func ReadFile (name: const string)
+  {
+    return fopen (name);
+  }
+}
+func hello() void {
+  File &f = io.ReadFile("main");
+  if (f == NULL)
+  e: uint = 5;
+  println(f.length);
+}
